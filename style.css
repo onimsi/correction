@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sofia", sans-serif;
+}
+a{
+   text-decoration: none; 
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./png/back.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+
+}
+.header-content h2{
+    font-size: 4vmin;
+    font-family: 'Times New Roman', Times, serif;  /* check this*/
+}
+
+.line{
+    width: 150px;
+    height: 4px;
+    background-color:#fc036b; 
+    margin: 10px auto;
+    border-radius: 5px;
+
+}
+ul{
+    list-style:none ;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+}
+.nav-link li{
+    margin: 0 30px;
+}
+.nav-link li:hover{
+    transition: 1.5s;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding:20px;
+    color: whitesmoke;
+}
+/* .toggle-btn, .menu-btn {
+    display: none;
+} */
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.active{
+    color: #fc036b;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.ctn{
+    text-decoration: none;
+    border: px solid #fc036b;
+    padding: 8px 15px;
+    background-color: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+
+}
+.ctn:hover{
+    transition: 1.5s;
+    background-color: whitesmoke;
+    box-shadow: aliceblue;
+    color: #fc036b;
+
+}
+.menu-btn{
+    width: 40px;
+    height: 6vh;
+    color: whitesmoke;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border: px solid green;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+/* responsiveness */
+@media only screen and (max-width:717px){
+    .navbar{
+        padding: 0;
+
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-link{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        border: px solid green;
+        background-color: rgb(72, 72, 117);
+        margin-top: -999px;
+        transition: all 0.5s ease;
+    }
+
+   
+    .nav-link li{
+        margin: 30px auto;
+
+    }
+    .mobile-menu{
+        margin-top: 0px;
+    }
+
+    .toggle-btn, .menu-btn {
+        display: block;
+    }
+
+  
+}
+
+@media only screen and(max-width:718px){
+    .menu-btn{
+        display: block;
+    }
+
+}
